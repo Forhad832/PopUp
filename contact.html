@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup</title>
+    <link rel="stylesheet" href="./index.css">
+  </head>
+  <body>
+   <header>
+      <nav class="container">
+          <div>
+              <img src="./images/logo.png" class="logo" alt="logo">
+          </div>
+          <ul>
+              <li><a href="./home.html">Home</a></li>
+              <li><a href="./onscroll.html">On Scroll</a></li>
+              <li><a href="./pagesession.html">Page Sessions</a></li>
+              <li><a href="./pageview.html">Page Views</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+          </ul>
+      </nav>
+  </header>
+<div class="container">
+  <h2 style="text-align: center; margin-top: 30px;">Set all data in localStorage</h2>
+</div>
+   <main>
+    <div class="click_pop">
+      <div class="popup_form" id="popUpForm">
+        <form onsubmit="popUpSubmit()">
+          <div>
+            <label for="username">UserName</label>
+            <input type="text" placeholder="username" id="username">
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" placeholder="email" id="email">
+          </div>
+          <div>
+            <label for="password">Password</label>
+            <input type="password" placeholder="password" required id="password">
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+        <span onclick="closeContact()" class="closeBtn">x</span>
+      </div>
+      <button class="btn" onclick="popUpContact()">Click Here</button>
+    </div>
+   </main>
+    
+
+   <script src="./js/contact.js"></script>
+  </body>
+</html>

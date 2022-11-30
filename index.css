@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+.onHeight{
+    min-height: 200vh;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+}
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+header{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+nav ul li{
+    list-style-type: none;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 90vh;
+}
+.btn{
+    background: #6fd649;
+    color: #000;
+    padding: 8px 60px;
+    border: 0;
+    outline: none;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    display: block;
+    margin: 30px auto;
+}
+.pageLoad_popup,.sessionPopup,.pageView,.popup_form{
+    width: 500px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 0 2rem;
+    transform: scale(.1);
+    visibility: hidden;
+    transition: transform  .3s;
+}
+.loadShowPopup,.sessionShowPopUp,.pageViewShowPopUp,.popUpFormShow{
+    transform: scale(1);
+    visibility: visible;
+}
+.pageLoad_popup img,.onscrollPopup img, .sessionPopup img, .pageView img{
+    width: 100px;
+    margin-top: -50px;
+}
+.pageLoad_popup h2,.onscrollPopup h2 ,.sessionPopup h2,.pageView h2{
+    font-size: 32px;
+    padding: 2rem 0;
+}
+.pageLoad_popup p {
+    font-size: 1rem;
+    line-height: 1.5;
+    padding-bottom: 1rem;
+}
+.pageLoad_popup button,.onscrollPopup button{
+    width: 100%;
+    background: #6fd649;
+    color: #000;
+    padding: 8px;
+    border: 0;
+    outline: none;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* page scroll style start here */
+.onscrollPopup{
+    position: fixed;
+    width: 500px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 0 2rem;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) scale(.1);
+    visibility: hidden;
+    transition: transform .3s ,top .3s;
+}
+.onScrollShowPopUp{
+    transform: translateX(-50%) scale(1);
+    visibility: visible;
+}
+.sessionPopup,.pageView{
+    display: none;
+}
+.sessionPopup span, .pageView span,.popup_form span{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: #000;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 8px 12px;
+}
+.popup_form {
+    text-align: left;
+    padding: 3rem 1rem;
+}
+.popup_form div{
+    margin-bottom: 1rem;
+}
+.popup_form button {
+    margin: 30px 0;
+    width: 100%;
+    background-color: aqua;
+    font-size: 18px;
+    border-radius: 4px;
+    outline: none;
+    border: 0;
+    padding: 4px 0;
+    cursor: pointer;
+}
+input {
+    width: 100%;
+    padding: 5px 3px;
+    outline: none;
+    border-radius: 3px;
+    border: 2px solid #555;
+    margin: 3px 0;
+  }
